@@ -1,0 +1,51 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 Leonardo Xavier de Brito. All rights reserved.
+This code may only be used under the BSD license.
+This work is based on Polymer gold-zip-input from Google Inc.
+-->
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+  <title>bromine-cep-input demo</title>
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../bromine-cep-input.html">
+
+  <link rel="stylesheet" href="../../paper-styles/paper-styles.html">
+  <link rel="import" href="../../paper-styles/demo-pages.html">
+</head>
+<style>
+  bromine-cep-input {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+<body>
+
+  <div class="vertical-section-container centered">
+    <h4>Standard</h4>
+    <div class="vertical-section">
+      <bromine-cep-input></bromine-cep-input>
+      <bromine-cep-input label="Auto-validating" auto-validate></bromine-cep-input>
+    </div>
+
+    <h4>Pre-validated</h4>
+    <div class="vertical-section">
+      <bromine-cep-input auto-validate value="22241"></bromine-cep-input>
+      <bromine-cep-input auto-validate value="22241-160"></bromine-cep-input>
+      <bromine-cep-input auto-validate value="123"></bromine-cep-input>
+    </div>
+
+    <h4>Custom error message</h4>
+    <div class="vertical-section">
+      <bromine-cep-input required auto-validate error-message="Por favor, digite um CEP válido" label="Zippety Zip"></bromine-cep-input>
+    </div>
+  </div>
+</body>
