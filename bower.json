@@ -1,6 +1,6 @@
 {
   "name": "bromine-cep-input",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "An input field for a cep code",
   "authors": [
     "Leonardo Xavier de Brito"
